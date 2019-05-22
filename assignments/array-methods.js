@@ -94,4 +94,16 @@ const largeDonations = runners.filter(word => word.shirt_donations > 90);
 console.log(largeDonations);
 // Problem 2
 
+let companyName = runners [0];
+
+let company = [];
+
+runners.forEach(function (obj) {
+    names.push(`${obj.company_name}`);
+});
+console.log(companyName);
+
 // Problem 3
+
+const female = runners.filter(word => word.shirt_donations > 90);
+console.log(largeDonations);
