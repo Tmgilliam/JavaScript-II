@@ -43,12 +43,22 @@ function sumNums(x, y, cb) {
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x*y)
 }
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  if(list.includes(`${item}`) === true) {
+    cb(true)
+  } else {
+    cb(false)
+  }
 }
+  
+
+
+ 
 
 /* STRETCH PROBLEM */
 
@@ -56,4 +66,22 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+   {
+    let object = {};
+    for (let i = 0; i < array.length; i++){
+      object[array[i]] = true;
+    }
+    cb(Object.keys(object));
+  }
+  let randomNum = [1, 5, 4, 7, 2, 4, 5, 10, 8];
+  
+  removeDuplicates(randomNum, function (noDuplicates){
+    console.log(noDuplicates)
+  });
 }
+
+// converted the array into an object.
+
+// characteristic of an object is that it can't have repeat keys.
+
+// After converting it to an object, I converted it back into an array.
