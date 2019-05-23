@@ -1,6 +1,12 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+var yomama= 'fat'
+ function snaps (){
+   console.log(`Yo mama is so fat ,` snaps + '!')
+ }
+fat = 'when she got on the scale it said,"I need your weight not your phone number'
+ snaps()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
